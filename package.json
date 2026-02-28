@@ -10,9 +10,9 @@
     "fmt:check": "oxfmt --check",
     "lint": "oxlint",
     "lint:fix": "oxlint --fix"
-
   },
   "dependencies": {
+    "@mediapipe/tasks-vision": "^0.10.32",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.575.0",
@@ -20,6 +20,7 @@
     "radix-ui": "^1.4.3",
     "react": "19.2.3",
     "react-dom": "19.2.3",
+    "spatial-player": "^3.2.16",
     "tailwind-merge": "^3.5.0"
   },
   "devDependencies": {
