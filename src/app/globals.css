@@ -124,3 +124,11 @@
     @apply bg-background text-foreground;
   }
 }
+
+@font-face {
+  font-family: "PixelFont";
+  src: url("/uni05_53.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
