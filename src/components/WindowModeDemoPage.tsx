@@ -90,7 +90,7 @@ export default function WindowModeDemoPage() {
         videoEl.srcObject = stream;
         await videoEl.play();
 
-        worker = new Worker(new URL("./LandmarkWorker.tsx", import.meta.url), {
+        worker = new Worker(new URL("./LandmarkWorker.ts", import.meta.url), {
           type: "module",
         });
 
