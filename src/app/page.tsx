@@ -1,5 +1,5 @@
-import WindowModeDemoPage from "@/components/WindowModeDemoPage";
+import SpaceGame from "@/components/game/space-game";
 
 export default function Home() {
-  return <WindowModeDemoPage />;
+  return <SpaceGame />;
 }

@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --webpack",
-    "build": "next build",
+    "assets": "node scripts/fetch-mediapipe-assets.mjs",
+    "dev": "node scripts/fetch-mediapipe-assets.mjs && next dev --webpack",
+    "build": "node scripts/fetch-mediapipe-assets.mjs && next build --webpack",
     "start": "next start",
     "fmt": "oxfmt",
     "fmt:check": "oxfmt --check",
@@ -21,13 +22,15 @@
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "spatial-player": "^3.2.16",
-    "tailwind-merge": "^3.5.0"
+    "tailwind-merge": "^3.5.0",
+    "three": "^0.186.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/three": "^0.186.0",
     "babel-plugin-react-compiler": "1.0.0",
     "oxfmt": "^0.35.0",
     "oxlint": "^1.50.0",
